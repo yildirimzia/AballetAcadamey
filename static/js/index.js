@@ -1,5 +1,5 @@
 import '../scss/base.scss';
-
+import $ from "jquery";
 
 const sayHello = ()=> {
   setInterval(() => {
