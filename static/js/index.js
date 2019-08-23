@@ -1,5 +1,6 @@
 import '../scss/base.scss';
 import $ from "jquery";
+import anime from 'animejs/lib/anime.es.js';
 
 const sayHello = ()=> {
   setInterval(() => {
