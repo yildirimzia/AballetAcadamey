@@ -1,7 +1,6 @@
 import '../scss/base.scss';
 
 
-
 const sayHello = ()=> {
   setInterval(() => {
     console.log('nasilsin ziya')
