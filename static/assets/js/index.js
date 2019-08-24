@@ -8,8 +8,8 @@ var mySwiper = new Swiper('.swiper-container', { /* ... */ });
 console.log(mySwiper)
 const sayHello = ()=> {
   setInterval(() => {
-    console.log('nasilsin ziya')
-  }, 8000);
+    console.log('sdasdasdasddad')
+  }, 2000);
 }
 
 sayHello();
