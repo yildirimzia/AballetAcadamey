@@ -4,7 +4,7 @@ const path =require('path');
 
 
 module.exports = {
-  entry: ["@babel/polyfill", "./static/js/index.js"],
+  entry: ["@babel/polyfill", "./assets/js/index.js"],
   
   output: {
     path: path.resolve(__dirname,'dist'),
@@ -36,7 +36,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './templates/home/index.html',
+      template: '../templates/home/index.html',
     }),
     new ExtractTextPlugin("./css/styles.css"),
   ],
