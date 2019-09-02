@@ -1,9 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
+@import "footer.scss";
+@import 'navbar.scss';
+@import 'reset.scss';
+
 
 body{
-  background-color: yellow;
-
-  h1 {
-    color: aliceblue;
-  }
+  background-color: red;
+  font-family: 'Crimson Text', serif;
 }

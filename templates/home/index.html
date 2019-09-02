@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <meta charset="UTF-8">  
     <link href="../static/dist/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i&display=swap" rel="stylesheet">
+    <title></title>
 </head>
 <body>
+        {% include "navbar/navbar.html" %}
 
     <div class="container  bg-primary">
         <div class="row">
             <p>{{request.method}}</p>
         </div>
     </div>
-<h1></h1>
+    {% include "footer/footer.html" %} 
 <script type="text/javascript" src="../static/dist/js/bundle.js"></script>
 </body>
 </html>
