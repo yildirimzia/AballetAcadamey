@@ -15,11 +15,12 @@
 
   .address {
     ul {
-      margin-top: 30px;
-      font-size: 18px;
+      padding: 0 44px;
+      font-size: 17px;
       color: #fff !important;
       line-height: 2;
-      margin-top: 41px;
+      margin-top: 30px;
+      font-weight: 200;
     }
   }
 
@@ -37,6 +38,13 @@
 
   .image-footer {
     margin-top: 36px;
+    display: flex;
+    justify-content: center;
+
+    a{
+      display: inline-block;
+    }
+
     li {
       width: 108px;
       padding: 4px;
@@ -48,16 +56,30 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      width: 400px;
     }
 
     img {
       width: 100%;
     }
+
+    a:hover {
+      opacity: 0.5;
+    }
+
+    a::after {
+      content: "\f569";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+    }
+
+
   }
 
   .last-news {
     color: #fff;
     margin-top: 32px;
+    font-weight: 200;
 
     span {
       display: block;
@@ -70,7 +92,7 @@
 
     li {
       line-height: 2em;
-      font-size: 18px;
+      font-size: 17px;
     }
   }
 
