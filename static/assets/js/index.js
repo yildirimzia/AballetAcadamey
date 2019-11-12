@@ -5,10 +5,3 @@ import Swiper from 'swiper';
 var mySwiper = new Swiper('.swiper-container', { /* ... */ });
 
 console.log(mySwiper)
-const sayHello = ()=> {
-  setInterval(() => {
-    console.log('sdasdasdasddad')
-  }, 2000);
-}
-
-sayHello();

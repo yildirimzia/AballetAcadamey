@@ -1,0 +1,70 @@
+$backBoxColor :#303030;
+$backColor: #000;
+.bottom-four {
+  display: flex;
+  margin: 30px 0;
+  padding: 0;
+  justify-content: center;
+  .bottom-four-box {
+    padding: 0 40px;
+    margin: 0 5px;
+    position: relative;
+    z-index: 2;
+
+    a {
+      transition: .2s ease-in-out;
+      position: relative;
+      top: 0;
+      right: 0;
+      &:hover {
+        top: -20px;
+        right: -18px;
+        transition: .2s ease-in-out;
+      }
+     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -20px;
+      right: 20px;
+      width: 80%;
+      height: 100%;
+      background-color: $backBoxColor;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.three-banner {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+  .banner-box {
+    text-align: center;
+    h1 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    p {
+      color: #b6b6b6;
+    }
+    
+    a {
+      text-decoration: underline;
+      color: #b6b6b6;
+    }
+
+    .banner-box-img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  }
+}

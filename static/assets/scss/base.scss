@@ -2,10 +2,15 @@
 @import "~bootstrap/scss/bootstrap";
 @import "footer.scss";
 @import 'navbar.scss';
-
+@import 'index.scss';
 
 
 body{
-  background-color: red;
+  background-color: black;
   font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  padding: 0;
+  width: 1440px !important;
 }
