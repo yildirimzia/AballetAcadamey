@@ -11,12 +11,11 @@
 <body>
     
     {% include "navbar/navbar.html" %}
+    {% include 'home/gallery-banner.html' %}
     <div class="container -primary">
-        <div class="row">
-            <!-- <p>{{request.method}}</p> -->
-            {% include 'home/triple-banner.html' %}
-            {% include 'home/triple-img.html' %}
-        </div>
+        <!-- <p>{{request.method}}</p> -->
+        {% include 'home/triple-banner.html' %}
+        {% include 'home/triple-img.html' %}
     </div>
     {% include "footer/footer.html" %} 
 <script type="text/javascript" src="../static/dist/js/bundle.js"></script>
