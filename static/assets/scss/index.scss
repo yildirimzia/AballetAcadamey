@@ -8,6 +8,10 @@ $backColor: #000;
     position: relative;
     z-index: 2;
 
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+
     a {
       transition: .2s ease-in-out;
       position: relative;
@@ -29,21 +33,27 @@ $backColor: #000;
       width: 80%;
       height: 100%;
       background-color: $backBoxColor;
+      @media (max-width: 767px) {
+        width: auto;
+      }
     }
 
     img {
       width: 100%;
+      @media (max-width: 767px) {
+        width: auto;
+      }
     }
   }
 }
 
 .three-banner {
-  margin-bottom: 30px;
+  margin-bottom: 120px !important;
   margin-top: 30px;
   .banner-box {
     text-align: center;
     &:hover {
-      text-decoration: none !important;
+      text-decoration: underline;
     }
     h1 {
       font-size: 24px;
@@ -68,7 +78,7 @@ $backColor: #000;
 }
 
 .img-container {
-  margin-bottom: 30px;
+  margin-bottom: 75px !important;
    .img-box {
     padding: 10px 5px;
     transition: .3s ease-in-out;
@@ -116,4 +126,18 @@ $backColor: #000;
     }
   }
 
+}
+
+
+.img-text-detail {
+  margin: 0 auto;
+  color: #fff;
+  width: 50%;
+  text-align: center;
+  opacity: 0.8;
+  line-height: 31px;
+  margin-bottom: 60px;
+  h1 {
+    font-family:cursive;
+  }
 }

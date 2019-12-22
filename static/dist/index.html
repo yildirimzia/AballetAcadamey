@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,400i,500i,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href="../static/dist/css/styles.css" rel="stylesheet">
@@ -10,14 +10,15 @@
 <link href="./css/styles.css" rel="stylesheet"></head>
 <body>
     
-    {% include "navbar/navbar.html" %}
-    {% include 'home/gallery-banner.html' %}
-    <div class="container -primary">
-        <!-- <p>{{request.method}}</p> -->
-        {% include 'home/triple-banner.html' %}
-        {% include 'home/triple-img.html' %}
-    </div>
-    {% include "footer/footer.html" %} 
-<script type="text/javascript" src="../static/dist/js/bundle.js"></script>
+  {% include "navbar/navbar.html" %}
+  {% include 'home/gallery-banner.html' %}
+  <div class="container -primary">
+      <!-- <p>{{request.method}}</p> -->
+      {% include 'home/triple-banner.html' %}
+      {% include 'home/triple-img.html' %}
+  </div>
+  {% include "footer/footer.html" %} 
+
+  <script type="text/javascript" src="../static/dist/js/bundle.js"></script>
 <script type="text/javascript" src="js/bundle.js"></script></body>
 </html>

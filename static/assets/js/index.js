@@ -1,7 +1,14 @@
-import '../scss/base.scss';
-import $ from "jquery";
-import anime from 'animejs/lib/anime.es.js';
-import Swiper from 'swiper';
-var mySwiper = new Swiper('.swiper-container', { /* ... */ });
+import './slider';
 
-console.log(mySwiper)
+import '../scss/base.scss';
+
+
+
+const sayHello = ()=> {
+  setInterval(() => {
+    console.log('nasilsin ziya')
+  }, 8000);
+}
+
+sayHello();
+console.log('asdadasdasddasdasdasdsd');
