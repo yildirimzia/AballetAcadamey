@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sli
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./assets/js/slider.js?");
+eval("var swiper = new Swiper('.swiper-container', {\n  navigation: {\n    nextEl: '.swiper-button-next',\n    prevEl: '.swiper-button-prev'\n  }\n});\n\n//# sourceURL=webpack:///./assets/js/slider.js?");
 
 /***/ }),
 

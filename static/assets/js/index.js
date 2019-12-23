@@ -1,5 +1,4 @@
 import './slider';
-
 import '../scss/base.scss';
 
 

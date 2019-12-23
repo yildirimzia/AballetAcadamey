@@ -1,5 +1,6 @@
 $backBoxColor :#303030;
 $backColor: #000;
+$breakpoint-tablet: 768px;
 .bottom-four {
   margin-top: 60px !important;
   justify-content: center;
@@ -8,7 +9,7 @@ $backColor: #000;
     position: relative;
     z-index: 2;
 
-    @media (max-width: 767px) {
+    @media (max-width: $breakpoint-tablet) {
       margin-bottom: 20px;
     }
 
@@ -40,9 +41,7 @@ $backColor: #000;
 
     img {
       width: 100%;
-      @media (max-width: 767px) {
-        width: auto;
-      }
+
     }
   }
 }
@@ -104,6 +103,10 @@ $backColor: #000;
       padding: 0 30px;
       transition: .3s ease-in-out;
       opacity: 0;
+
+      @media (max-width: $breakpoint-tablet) {
+        opacity: 1;
+      }
 
       a {
         color: #989898;

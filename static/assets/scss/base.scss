@@ -4,7 +4,7 @@
 @import 'navbar.scss';
 @import 'slider.scss';
 @import 'index.scss';
-
+@import 'variables.scss';
 
 body{
   background-color: black;
@@ -13,5 +13,4 @@ body{
 
 .container {
   padding: 0;
-  width: 1440px !important;
 }
