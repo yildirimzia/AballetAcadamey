@@ -1,3 +1,4 @@
+$breakpoint-tablet: 768px;
 html, body {
   position: relative;
   height: 100%;
@@ -24,4 +25,10 @@ html, body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+
+  @media (max-width: $breakpoint-tablet) { 
+    img {
+      width: 100%;
+    }
+  }
 }

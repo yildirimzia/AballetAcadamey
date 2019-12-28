@@ -7294,6 +7294,9 @@ html, body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center; }
+  @media (max-width: 768px) {
+    .swiper-slide img {
+      width: 100%; } }
 
 .bottom-four {
   margin-top: 60px !important;
