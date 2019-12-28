@@ -7398,7 +7398,14 @@ html, body {
   .img-text-detail h1 {
     font-family: cursive; }
   .img-text-detail .text-content {
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding: 0 100px; }
+    .img-text-detail .text-content p {
+      font-size: 19px;
+      font-family: fantasy; }
+    .img-text-detail .text-content span {
+      font-size: 21px;
+      font-family: fantasy; }
   .img-text-detail .title-text::after {
     content: '';
     position: absolute;
