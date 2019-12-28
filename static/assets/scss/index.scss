@@ -1,4 +1,4 @@
-$backBoxColor :#303030;
+$backBoxColor : rgb(190, 9, 0);;
 $backColor: #000;
 $breakpoint-tablet: 768px;
 .bottom-four {
@@ -12,18 +12,6 @@ $breakpoint-tablet: 768px;
     @media (max-width: $breakpoint-tablet) {
       margin-bottom: 20px;
     }
-
-    a {
-      transition: .2s ease-in-out;
-      position: relative;
-      top: 0;
-      right: 0;
-      &:hover {
-        top: -20px;
-        right: -18px;
-        transition: .2s ease-in-out;
-      }
-     }
 
     &::after {
       content: "";
@@ -41,7 +29,11 @@ $breakpoint-tablet: 768px;
 
     img {
       width: 100%;
-
+      transition: .3s ease-in-out;
+      &:hover {
+        transition: .3s ease-in-out;
+        transform: scale(1);
+      }
     }
   }
 }
@@ -140,7 +132,33 @@ $breakpoint-tablet: 768px;
   opacity: 0.8;
   line-height: 31px;
   margin-bottom: 60px;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 0 24px;
+    width: 100%;
+  }
   h1 {
     font-family:cursive;
+  }
+
+  .text-content {
+    margin-top: 30px;
+  }
+
+  .title-text::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    border-bottom: 2px solid rgb(190, 9, 0);
+    left: 0;
+    right: 0;
+    margin: 5px auto;
+  }
+}
+
+.gallery-banner-silder {
+  .swiper-slide {
+    background-color: black;
+    margin: 55px 0;
   }
 }
