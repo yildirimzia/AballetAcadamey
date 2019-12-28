@@ -1,7 +1,7 @@
 $breakpoint-tablet: 768px;
 .footer {
  background-color: black; 
- padding-top: 40px;
+ margin-top: 60px;
 
   .footer-box  {
     padding: 30px;
@@ -37,6 +37,14 @@ $breakpoint-tablet: 768px;
 
       li {
          padding: 0 15px;
+
+         a {
+           color: #fff;
+           transition: .3s ease-in-out;
+           &:hover {
+             color: #be0900;
+           }
+          }
       }
     }
   }

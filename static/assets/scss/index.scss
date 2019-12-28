@@ -30,10 +30,6 @@ $breakpoint-tablet: 768px;
     img {
       width: 100%;
       transition: .3s ease-in-out;
-      &:hover {
-        transition: .3s ease-in-out;
-        transform: scale(1);
-      }
     }
   }
 }
@@ -160,5 +156,20 @@ $breakpoint-tablet: 768px;
   .swiper-slide {
     background-color: black;
     margin: 55px 0;
+  }
+  .swiper-button-next, 
+  .swiper-button-prev {
+    outline: none;
+    color: $backBoxColor;
+  }  
+}
+
+.vide-source {
+  video {
+    width: 100%;
+    height: 500px;
+    outline: none;
+    margin-bottom: 60px;
+    object-fit: cover;
   }
 }
