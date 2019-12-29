@@ -7328,13 +7328,15 @@ html, body {
   margin-bottom: 120px !important;
   margin-top: 30px; }
   .three-banner .banner-box {
-    text-align: center; }
+    text-align: center;
+    padding: 10px; }
     .three-banner .banner-box:hover {
       text-decoration: underline; }
     .three-banner .banner-box h1 {
       font-size: 24px;
       text-transform: uppercase;
-      color: #fff; }
+      color: #fff;
+      margin-bottom: 20px; }
     .three-banner .banner-box p {
       color: #b6b6b6; }
     .three-banner .banner-box a {
@@ -7430,6 +7432,22 @@ html, body {
   outline: none;
   margin-bottom: 60px;
   object-fit: cover; }
+
+.vagonova-box {
+  margin-top: 60px !important;
+  border-left: 1px solid #be0900;
+  border-right: 1px solid #be0900; }
+  .vagonova-box .vagonova-image {
+    display: flex;
+    padding: 55px; }
+    .vagonova-box .vagonova-image:first-child {
+      border-top: 1px solid #be0900;
+      border-bottom: 1px solid #be0900; }
+    .vagonova-box .vagonova-image:last-child {
+      border-top: 1px solid #be0900;
+      border-bottom: 1px solid #be0900; }
+    .vagonova-box .vagonova-image img {
+      width: 100%; }
 
 body {
   background-color: black;

@@ -39,6 +39,7 @@ $breakpoint-tablet: 768px;
   margin-top: 30px;
   .banner-box {
     text-align: center;
+    padding: 10px;
     &:hover {
       text-decoration: underline;
     }
@@ -46,6 +47,7 @@ $breakpoint-tablet: 768px;
       font-size: 24px;
       text-transform: uppercase;
       color: #fff;
+      margin-bottom: 20px;
     }
     p {
       color: #b6b6b6;
@@ -181,5 +183,31 @@ $breakpoint-tablet: 768px;
     outline: none;
     margin-bottom: 60px;
     object-fit: cover;
+  }
+}
+
+.vagonova-box {
+  margin-top: 60px !important;
+  border-left: 1px solid $backBoxColor;
+  border-right: 1px solid $backBoxColor;
+
+
+  .vagonova-image {
+    display: flex;
+    padding: 55px;
+
+    &:first-child {
+      border-top: 1px solid $backBoxColor;
+      border-bottom: 1px solid $backBoxColor;
+    }
+
+    &:last-child {
+      border-top: 1px solid $backBoxColor;
+      border-bottom: 1px solid $backBoxColor;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 }
