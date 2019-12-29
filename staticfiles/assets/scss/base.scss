@@ -1,0 +1,16 @@
+@import 'reset.scss';
+@import "~bootstrap/scss/bootstrap";
+@import "footer.scss";
+@import 'navbar.scss';
+@import 'slider.scss';
+@import 'index.scss';
+@import 'variables.scss';
+
+body{
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  padding: 0;
+}
