@@ -7402,6 +7402,9 @@ html, body {
   .img-text-detail .text-content {
     margin-top: 30px;
     padding: 0 100px; }
+    @media (max-width: 768px) {
+      .img-text-detail .text-content {
+        padding: 0; } }
     .img-text-detail .text-content p {
       font-size: 19px;
       font-family: fantasy; }
@@ -7442,12 +7445,85 @@ html, body {
     padding: 55px; }
     .vagonova-box .vagonova-image:first-child {
       border-top: 1px solid #be0900;
-      border-bottom: 1px solid #be0900; }
+      border-bottom: 1px solid #be0900;
+      background-image: url("/static/assets/img/images.png");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center; }
     .vagonova-box .vagonova-image:last-child {
       border-top: 1px solid #be0900;
-      border-bottom: 1px solid #be0900; }
+      border-bottom: 1px solid #be0900;
+      background-image: url("/static/assets/img/vaganova.jpg");
+      background-repeat: no-repeat;
+      background-position: center; }
     .vagonova-box .vagonova-image img {
       width: 100%; }
+
+.schools-content {
+  opacity: 0.8;
+  margin-bottom: 60px !important; }
+  .schools-content .schools-img img {
+    width: 100%; }
+  .schools-content .shcools-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px; }
+    .schools-content .shcools-text a {
+      border: 1px solid #be0900;
+      display: inline-block;
+      width: 180px;
+      margin: 0 auto;
+      padding: 15px;
+      color: #fff;
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+      transition: .3s ease-in-out; }
+      .schools-content .shcools-text a::after {
+        content: '';
+        position: absolute;
+        width: 53px;
+        background: #be0900;
+        right: 0;
+        width: 100%;
+        border-radius: 33px;
+        height: 100%;
+        top: 0;
+        border-right: none;
+        opacity: 0.5;
+        margin-right: -180px;
+        z-index: -1;
+        transition: .3s ease-in-out; }
+      .schools-content .shcools-text a:hover::after {
+        margin-right: 0;
+        transition: .3s ease-in-out; }
+      .schools-content .shcools-text a::before {
+        content: '';
+        position: absolute;
+        width: 53px;
+        background: #be0900;
+        left: 0;
+        width: 100%;
+        border-radius: 33px;
+        height: 100%;
+        top: 0;
+        border-right: none;
+        opacity: 0.5;
+        margin-left: -180px;
+        z-index: -1;
+        transition: .3s ease-in-out; }
+      .schools-content .shcools-text a:hover::before {
+        margin-left: 0;
+        transition: .3s ease-in-out; }
+    .schools-content .shcools-text p {
+      font-size: 19px;
+      font-family: fantasy;
+      color: #fff;
+      padding: 0 25px;
+      line-height: 2.5rem;
+      margin-bottom: 40px; }
 
 body {
   background-color: black;
