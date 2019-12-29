@@ -40,9 +40,6 @@ $breakpoint-tablet: 768px;
   .banner-box {
     text-align: center;
     padding: 10px;
-    &:hover {
-      text-decoration: underline;
-    }
     h1 {
       font-size: 24px;
       text-transform: uppercase;
@@ -54,8 +51,29 @@ $breakpoint-tablet: 768px;
     }
     
     a {
-      text-decoration: underline;
       color: #b6b6b6;
+      position: relative;
+      margin-top: 20px;
+      display: inline-block;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        border: 1px solid $backBoxColor;
+        left: -40px;
+        top: 10px;
+        border-radius: 50%;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        border: 1px solid $backBoxColor;
+        right: -40px;
+        top: 10px;
+        border-radius: 50%;
+      }
     }
 
     .banner-box-img {
@@ -191,7 +209,7 @@ $breakpoint-tablet: 768px;
 }
 
 .vagonova-box {
-  margin-top: 60px !important;
+  margin-top: 100px !important;
   border-left: 1px solid $backBoxColor;
   border-right: 1px solid $backBoxColor;
 
@@ -241,7 +259,7 @@ $breakpoint-tablet: 768px;
     margin-top: 40px;
 
     a {
-      border: 1px solid $backBoxColor;
+      border: 2px solid $backBoxColor;
       display: inline-block;
       width: 180px;
       margin: 0 auto;

@@ -7261,6 +7261,15 @@ a.text-dark:hover, a.text-dark:focus {
     color: #888;
     border-top: 1px solid #888; }
 
+.header-box .logo-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: cursive;
+  font-size: 30px; }
+  .header-box .logo-header span {
+    color: #fff; }
+
 .header-box ul {
   display: flex;
   justify-content: space-around;
@@ -7330,8 +7339,6 @@ html, body {
   .three-banner .banner-box {
     text-align: center;
     padding: 10px; }
-    .three-banner .banner-box:hover {
-      text-decoration: underline; }
     .three-banner .banner-box h1 {
       font-size: 24px;
       text-transform: uppercase;
@@ -7340,8 +7347,26 @@ html, body {
     .three-banner .banner-box p {
       color: #b6b6b6; }
     .three-banner .banner-box a {
-      text-decoration: underline;
-      color: #b6b6b6; }
+      color: #b6b6b6;
+      position: relative;
+      margin-top: 20px;
+      display: inline-block; }
+      .three-banner .banner-box a::before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        border: 1px solid #be0900;
+        left: -40px;
+        top: 10px;
+        border-radius: 50%; }
+      .three-banner .banner-box a::after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        border: 1px solid #be0900;
+        right: -40px;
+        top: 10px;
+        border-radius: 50%; }
     .three-banner .banner-box .banner-box-img {
       display: flex;
       justify-content: center;
@@ -7437,7 +7462,7 @@ html, body {
   object-fit: cover; }
 
 .vagonova-box {
-  margin-top: 60px !important;
+  margin-top: 100px !important;
   border-left: 1px solid #be0900;
   border-right: 1px solid #be0900; }
   .vagonova-box .vagonova-image {
@@ -7471,7 +7496,7 @@ html, body {
     justify-content: center;
     margin-top: 40px; }
     .schools-content .shcools-text a {
-      border: 1px solid #be0900;
+      border: 2px solid #be0900;
       display: inline-block;
       width: 180px;
       margin: 0 auto;

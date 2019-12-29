@@ -1,4 +1,15 @@
 .header-box {
+  .logo-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: cursive;
+    font-size: 30px;
+
+    span {
+      color: #fff;
+    }
+  }
   ul {
     display: flex;
     justify-content: space-around;
@@ -10,5 +21,8 @@
         text-decoration: none;
       }
     }
+  }
+
+  .img-header {
   }
 }
