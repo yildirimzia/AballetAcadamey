@@ -7210,6 +7210,9 @@ a.text-dark:hover, a.text-dark:focus {
     line-height: 2;
     margin-top: 30px;
     font-weight: 200; }
+    @media (max-width: 768px) {
+      .footer .address ul {
+        padding: 0%; } }
   .footer .social-media ul {
     display: flex;
     flex-direction: row;
@@ -7274,9 +7277,51 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   justify-content: space-around;
   margin-top: 19px; }
-  .header-box ul li a {
-    color: #fff;
-    text-decoration: none; }
+  .header-box ul li {
+    border-bottom: 1px solid #be0900; }
+    .header-box ul li a {
+      color: #fff;
+      text-decoration: none; }
+
+.mobile-header {
+  background: #be0900;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 5px;
+  font-size: 20px;
+  position: relative; }
+  .mobile-header .fa-bars {
+    font-size: 30px; }
+
+.mobile-menu {
+  background: #be0900;
+  width: 70%;
+  height: 100vh;
+  position: absolute;
+  z-index: 9999;
+  left: -550px;
+  transition: .3s ease-in-out; }
+  .mobile-menu ul {
+    padding: 0 20px;
+    line-height: 5; }
+    .mobile-menu ul li {
+      border-bottom: 1px solid #000000; }
+      .mobile-menu ul li a {
+        color: #000000; }
+  .mobile-menu .menu-contact {
+    margin-top: 45px;
+    color: #000000;
+    padding: 0 20px; }
+    .mobile-menu .menu-contact h1 {
+      font-size: 20px;
+      text-align: center; }
+    .mobile-menu .menu-contact span {
+      display: block;
+      text-align: center; }
+
+.menu-open {
+  left: 0;
+  transition: .3s ease-in-out; }
 
 html, body {
   position: relative;
@@ -7465,6 +7510,10 @@ html, body {
   margin-top: 100px !important;
   border-left: 1px solid #be0900;
   border-right: 1px solid #be0900; }
+  @media (max-width: 768px) {
+    .vagonova-box {
+      border-left: none;
+      border-right: none; } }
   .vagonova-box .vagonova-image {
     display: flex;
     padding: 55px; }
@@ -7475,12 +7524,18 @@ html, body {
       background-repeat: no-repeat;
       background-size: auto;
       background-position: center; }
+      @media (max-width: 768px) {
+        .vagonova-box .vagonova-image:first-child {
+          background-size: contain; } }
     .vagonova-box .vagonova-image:last-child {
       border-top: 1px solid #be0900;
       border-bottom: 1px solid #be0900;
       background-image: url("/static/assets/img/vaganova.jpg");
       background-repeat: no-repeat;
       background-position: center; }
+      @media (max-width: 768px) {
+        .vagonova-box .vagonova-image:last-child {
+          background-size: contain; } }
     .vagonova-box .vagonova-image img {
       width: 100%; }
 

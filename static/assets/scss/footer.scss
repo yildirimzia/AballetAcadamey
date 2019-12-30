@@ -26,6 +26,10 @@ $breakpoint-tablet: 768px;
       line-height: 2;
       margin-top: 30px;
       font-weight: 200;
+
+      @media (max-width:$breakpoint-tablet) {
+        padding: 0%;
+      }
     }
   }
 

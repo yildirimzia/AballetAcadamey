@@ -1,4 +1,4 @@
-$backBoxColor : rgb(190, 9, 0);;
+$backBoxColor : rgb(190, 9, 0);
 $backColor: #000;
 $breakpoint-tablet: 768px;
 .bottom-four {
@@ -212,7 +212,10 @@ $breakpoint-tablet: 768px;
   margin-top: 100px !important;
   border-left: 1px solid $backBoxColor;
   border-right: 1px solid $backBoxColor;
-
+  @media (max-width: $breakpoint-tablet) {
+    border-left: none;
+    border-right: none;
+  }
 
   .vagonova-image {
     display: flex;
@@ -225,6 +228,10 @@ $breakpoint-tablet: 768px;
       background-repeat: no-repeat;
       background-size: auto;
       background-position: center;
+
+      @media (max-width: $breakpoint-tablet) {
+        background-size: contain;
+      }
     }
 
     &:last-child {
@@ -233,6 +240,9 @@ $breakpoint-tablet: 768px;
       background-image: url('/static/assets/img/vaganova.jpg');
       background-repeat: no-repeat;
       background-position: center;
+      @media (max-width: $breakpoint-tablet) {
+        background-size: contain;
+      }
     }
 
     img {
