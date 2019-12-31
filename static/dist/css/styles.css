@@ -7192,7 +7192,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .footer {
   background-color: black;
-  margin-top: 60px; }
+  margin-top: 60px;
+  position: relative; }
   .footer .footer-box {
     padding: 30px;
     text-align: center; }
@@ -7263,6 +7264,36 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 20px;
     color: #888;
     border-top: 1px solid #888; }
+  .footer .up-scroll {
+    position: fixed;
+    background: #be0900;
+    bottom: 100px;
+    right: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    visibility: hidden;
+    opacity: 0; }
+    .footer .up-scroll.active {
+      opacity: 1;
+      visibility: visible; }
+    .footer .up-scroll::before {
+      content: '\f35b';
+      position: absolute;
+      font-size: 40px;
+      right: 5px;
+      top: -5px; }
+    .footer .up-scroll:hover::before {
+      color: #be0900;
+      transition: .3s ease-in-out; }
+    .footer .up-scroll:hover {
+      background-color: #000000;
+      transition: .3s ease-in-out; }
 
 .header-box .logo-header {
   display: flex;

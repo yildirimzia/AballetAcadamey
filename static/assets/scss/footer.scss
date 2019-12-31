@@ -1,7 +1,9 @@
 $breakpoint-tablet: 768px;
+$backBoxColor : rgb(190, 9, 0);
 .footer {
  background-color: black; 
  margin-top: 60px;
+ position: relative;
 
   .footer-box  {
     padding: 30px;
@@ -115,4 +117,45 @@ $breakpoint-tablet: 768px;
     border-top: 1px solid #888;
   }
 
+  .up-scroll {
+    position: fixed;
+    background: $backBoxColor;
+    bottom: 100px;
+    right: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    &::before {
+      content: '\f35b';
+      position: absolute;
+      font-size: 40px;
+      right: 5px;
+      top: -5px;
+    }
+
+    &:hover::before {
+      color: $backBoxColor;
+      transition: .3s ease-in-out;
+    }
+
+    &:hover {
+      background-color: #000000;
+      transition: .3s ease-in-out;
+    }
+  }
 }
+
