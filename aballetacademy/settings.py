@@ -29,8 +29,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    #'material',
-    #'material.admin',
+    # 'material',
+    # 'material.admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,9 +79,11 @@ WSGI_APPLICATION = 'aballetacademy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'academy',
         'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
