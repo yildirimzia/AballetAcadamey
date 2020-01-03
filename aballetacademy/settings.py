@@ -24,19 +24,26 @@ SECRET_KEY = '0q#-z9b*4_&bstheq2e+9)^))8nzhr*7uz7#5*18$wv+c$-l_*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['18.184.105.56', 'localhost', '127.0.0.1',
+                 'ec2-18-184-105-56.eu-central-1.compute.amazonaws.com',
+                 'aballetmusicacademy.com', 'www.aballetmusicacademy.com']
 
 # Application definition
 
 INSTALLED_APPS = [
-    'material',
-    'material.admin',
+    # 'material',
+    # 'material.admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "ckeditor",
+    "ckeditor_uploader",
+    "home",
+    "blog",
+    "gallery"
 ]
 
 MIDDLEWARE = [
@@ -74,8 +81,12 @@ WSGI_APPLICATION = 'aballetacademy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'aballet',
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        'PASSWORD': 'aballet'
     }
 }
 
@@ -122,3 +133,18 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = "/media/"
+
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 1000,
+        'width': 1000,
+    },
+}
+
+try:
+    from aballetacademy.local_settings import *
+except ImportError:
+    pass
