@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'aballetacademy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'academy',
+        'NAME': 'aballet',
         'USER': 'postgres',
         'HOST': 'localhost',
         'PORT': '5432',
