@@ -24,7 +24,9 @@ SECRET_KEY = '0q#-z9b*4_&bstheq2e+9)^))8nzhr*7uz7#5*18$wv+c$-l_*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['18.184.105.56',
+                 'ec2-18-184-105-56.eu-central-1.compute.amazonaws.com',
+                 'aballetmusicacademy.com', 'www.aballetmusicacademy.com']
 
 # Application definition
 
