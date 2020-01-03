@@ -21,7 +21,7 @@ from home.views import HomeView, AboutView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^home/', HomeView.as_view()),
+    url(r'', HomeView.as_view()),
     url(r'^about/', AboutView.as_view()),
     url(r'^blog/', BlogView.as_view()),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
