@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,400i,500i,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">  
-    <link href="../static/dist/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="{% static 'dist/css/styles.css' %}" rel="stylesheet">
     <title>A Ballet Music Academy</title>
 </head>
 <body>
@@ -23,6 +24,6 @@
   {% include "footer/footer.html" %} 
   <script src="https://unpkg.com/swiper/js/swiper.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script type="text/javascript" src="../static/dist/js/bundle.js"></script>
+  <script type="text/javascript" src="{% static 'dist/js/bundle.js' %}"></script>
 </body>
 </html>

@@ -143,3 +143,8 @@ CKEDITOR_CONFIGS = {
         'width': 1000,
     },
 }
+
+try:
+    from aballetacademy.local_settings import *
+except ImportError:
+    pass
