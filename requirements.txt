@@ -1,5 +1,5 @@
 Django==1.10.3
 django-material==1.1.0
-Pillow==3.1.0
+Pillow==9.0.0
 psycopg2==2.7.4
 django-ckeditor
